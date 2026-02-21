@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const tasksRouter = require('./routes/tasks');
+app.use('/tasks', tasksRouter);
 
 app.get('/', (req, res) => {
-  res.json({ message: "DevOps Task Manager API is running (Lab 1)" });
+  res.json({ message: "DevOps Task Manager API is running Lab 1" });
 });
 
 app.get('/tasks', (req, res) => {

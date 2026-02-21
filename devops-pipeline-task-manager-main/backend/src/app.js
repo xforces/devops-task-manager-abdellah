@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.json({ message: "DevOps Task Manager API is running (Lab 1)" });
+  res.json({ message: "Welcome from FEATURE branch" });
 });
 
 app.get('/tasks', (req, res) => {

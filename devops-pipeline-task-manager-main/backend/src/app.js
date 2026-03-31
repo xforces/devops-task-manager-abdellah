@@ -5,7 +5,7 @@ app.use(express.json());
 const tasksRouter = require('./routes/tasks');
 
 app.get('/', (req, res) => {
-    res.json({ message: "welcome" });
+    res.json({ message: "welcome hwari wak wak" });
 });
 
 app.use('/tasks', tasksRouter);
